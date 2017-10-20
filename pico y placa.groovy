@@ -61,12 +61,9 @@ import java.text.SimpleDateFormat
           
      }
       
-       if(gettingData.as.size() >= 1){
-       
-       print "The cars with these plate numbers, are the ones that can't travel from 7:00 and 9:00 am, and from 16:00 to 19:30 pm, on "+ dateN +" are: "+ gettingData.as.toString().replaceAll("[\\[\\],]", "")
-      
-       }else{
-       print "On weekends you can travel freelly with you car, the day is "+dateN
-       
-       }
+     if(d == 7 || d == 1){
+                print "On weekends you can travel freelly with you car, the day is "+dateN
+          }else{
+                print "The cars with these plate numbers, are the ones that can't travel from 7:00 and 9:00 am, and from 16:00 to 19:30 pm, on "+ dateN +" are: "+ gettingData.as.toString().replaceAll("[\\[\\],]", "")
+     }
        
